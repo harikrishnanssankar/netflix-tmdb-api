@@ -1,0 +1,224 @@
+.loginScreen {
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/757ab38f-5d08-40bc-b3eb-eaba63ed8203/93c34f94-56c8-40a7-8b2e-b4aac6427977/GB-en-20210125-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.loginScreen__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 30px;
+    z-index: 2;
+}
+.loginScreen__logo {
+    position: fixed;
+    left: 43px;
+    width: 112px;
+    object-fit: contain;
+    cursor: pointer;
+}
+.signin__btn {
+    position: fixed;
+    right: 43px;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    outline: none;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    font-size: small;
+}
+.signin__btn:hover, .loginScreen__getStarted:hover {
+    background-color: #d00610;
+    transition: 0.3s;
+}
+.loginScreen__gradient {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8) 0,
+        rgba(0, 0, 0, 0) 60%,
+        rgb(0, 0, 0, 0.8) 100%
+    );
+}
+.loginScreen__body {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
+    z-index: 2;
+    color: white;
+    padding: 20px;
+}
+
+
+
+
+
+
+/* loginscreen body */
+.loginScreen__body > h1 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+.loginScreen__body > h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.loginScreen__body > p {
+    font-size: 1.17rem;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+.loginScreen__input > form > input{
+    padding: 10px;
+    outline: none;
+    border: none;
+    width: 350px;
+    max-width: 55%;
+    font-size: large;
+}
+.loginScreen__getStarted {
+    padding: 10px 15px;
+    border: none;
+    color: #fff;
+    background-color: #e50914;
+    cursor: pointer;
+    font-size: large;
+}
+.arrow {
+    font-size: large;
+    padding: 0px 2px 0px 9px;
+    
+}
+
+
+
+
+
+
+
+/* Signin body */
+.signin__container {
+    width: 350px;
+    height: 350px;
+    max-width: 70%;
+    max-height: 70%;
+    background-color: rgba(0, 0, 0, 0.652);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    z-index: 2;
+    position: absolute;
+    top: 28%;
+    color: white;
+    border-radius: 8px;
+    padding: 45px;
+}
+.signin__container > h1 {
+    font-weight: 500;
+    
+}
+.signin__container > form > input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    margin-bottom: 15px;
+}
+
+.signin__container > form > button {
+    width: 100%;
+    padding: 7px;
+    background-color: #e50914;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+}
+.signin__container > form > button:hover {
+    background-color: #d00610;
+    transition: 0.3s;
+}
+.signup__para {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: rgb(170, 170, 170);
+}
+.signup__para > p {
+    font-size: small
+}
+p ~ p {
+    color: white;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.err__message {
+    font-size: smaller;
+    color: #e50914;
+}
+
+
+
+
+/* for mobile devices */
+
+@media only screen and max-width(600px) {
+    .loginScreen__body > h1 {
+        font-size: 2.2rem;
+        margin-bottom: 25px;
+        font-weight: 500;
+    }
+    .loginScreen__body > h3 {
+        font-size: 1.4rem;
+        font-weight: 400;
+        margin-bottom: 25px;
+    }
+    .loginScreen__body > p {
+        font-size: 1.17rem;
+        font-weight: 300;
+        margin-bottom: 15px;
+    }
+    .loginScreen__input > form > input{
+        padding: 20px;
+        outline: none;
+        border: none;
+        width: 700px;
+        max-width: 55%;
+        font-size: large;
+    }
+    .loginScreen__getStarted {
+        padding: 20px 25px;
+        border: none;
+        color: #fff;
+        background-color: #e50914;
+        cursor: pointer;
+        font-size: large;
+    }
+    .arrow {
+        font-size: large;
+        padding: 0px 2px 0px 9px;
+        
+    }
+}

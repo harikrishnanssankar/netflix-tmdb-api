@@ -1,0 +1,44 @@
+.nav{
+    position: fixed;
+    top: 0;
+    padding: 34px;
+    width: 100%;
+    z-index: 10;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+    box-shadow:0 30px 40px -10px #111 inset;   
+}
+.nav__contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+.nav__contentsRight{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    position: fixed;
+    left: 43px;
+}
+.nav__contentsRight > span {
+    color: white;
+    cursor: pointer;
+}
+.nav__logo {
+    width: 112px;
+    object-fit: contain;
+    cursor: pointer;
+}
+.nav__avatar {
+    position: fixed;
+    right: 43px;
+    width: 32px;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
+.nav__black {
+    background-color: #111;
+    transition: ease-in .2s;
+}

@@ -1,0 +1,94 @@
+.profile__screen {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profileScreen__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 20%;
+    color: white;
+    padding: 30px;
+    width: 600px;
+    max-width: 97%;
+}
+.profileScreen__body > h1 {
+    margin-bottom: 10px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid rgb(55, 55, 55);
+    font-weight: 400;
+
+} 
+.profileScreen__form > h3 {
+    border-bottom:1px solid rgb(56, 56, 56);
+    margin-bottom: 10px;
+    padding: 5px 0px;
+    font-weight: 400;
+}
+.profileScreen__form > input {
+    padding: 9px;
+    outline: none;
+    border: none;
+    margin-bottom: 5px;
+    background-color: rgb(123, 123, 123);
+    color: white;
+    border-radius: 2px;
+}
+.profileScreen__input::placeholder {
+    color: white;
+}
+
+.profileScreen__info {
+    display: flex;
+    justify-content: flex-start;
+}
+.avatar__img {
+    height: 70px;
+    width: auto;
+    margin-right: 15px;
+    border-radius: 3px;
+}
+.profileScreen__form {
+    display: flex;
+    flex-direction: column;
+}
+.package {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0px;
+    padding: 5px 0px;
+}
+.package > h5 {
+    font-weight: 400;
+    font-size: small;
+}
+.package > h5 > span {
+    font-weight: 300;
+    font-size: smaller;
+}
+.signout__btn, .subscribed__btn, .subscribe__btn  {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.signout__btn:hover, .subscribed__btn:hover, .subscribe__btn:hover {
+    background-color: #bf0610;
+}
+.sub__btn {
+    background-color: rgb(73, 73, 73);
+}
+.signout__btn {
+    padding: 10px 5px;
+}
+.profileScreen__details {
+    width: 100%;
+}

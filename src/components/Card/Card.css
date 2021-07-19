@@ -1,0 +1,8 @@
+.hover__contents{
+    display: none;
+    position: absolute;
+}
+
+.row__poster:hover {
+    position: absolute;
+}
